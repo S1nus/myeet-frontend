@@ -1,0 +1,180 @@
+
+html, body {
+	font: 14px/1.21 'Helvetica Neue', arial, sans-serif;
+	font-weight: 400;
+	background-color: #325aa8;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.sidebar {
+	height: 100%;
+	background-color: #273e6b;
+	box-shadow: 10px 10px 15px #224a98;
+	width: 300px;
+	overflow: auto;
+}
+
+.mainpanel {
+	height: 100%;
+	flex-grow: 1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	display: block;
+	height: 100px;
+	width: 100%;
+	text-align: center;
+}
+
+.header .logo {
+	margin-top: 10px;
+	width: 100px;
+	cursor: pointer;
+}
+
+.header .notification {
+	width: 32px;
+	cursor: pointer;
+}
+
+.messages {
+	width: 100%;
+	flex-grow: 1;
+	position: relative;
+	overflow-y: auto;
+}
+
+.message {
+	margin: 10px auto;
+	padding: 5px 20px;
+}
+
+.message.theirs {
+	text-align: left;
+}
+
+.message.mine {
+	text-align: right;
+}
+
+.message.mine .bubble {
+	background-color: lightblue;
+	box-shadow: -15px 15px 15px #224a98;
+}
+
+.message.theirs .bubble {
+	background-color: green;
+	box-shadow: 15px 15px 15px #224a98;
+}
+
+.bubble {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.input {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	display: flex;
+}
+
+.input input {
+	flex-grow: 2;
+}
+
+.input button {
+	flex-grow: 1;
+}
+
+.chatlisting {
+	padding: 20px 10px;
+	cursor: pointer;
+}
+
+.chatlisting:nth-child(even) {
+	background-color: #172e5b;
+}
+
+.chatlisting:nth-child(odd) {
+	background-color: #374e7b;
+}
+
+.chatlisting.selected {
+	background-color: white;
+}
+
+.newchatbutton {
+	width: 30%;
+	max-width: 50px;
+	display: block;
+	margin: 20px auto;
+	cursor: pointer;
+}
+
+.newchatscreen {
+	display: flex;
+	flex-direction: column;
+	margin: 10px auto;
+	font-size: 18pt;
+}
+
+.newchatscreen img {
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+}
+
+.newchatscreen label {
+	color: white;
+	font-weight: bold;
+}
+
+.newchatscreen input {
+	margin: 10px auto;
+}
+
+.newchatscreen button {
+	margin: 10px auto;
+}
+
+.waitingforserver {
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Welcome screen */
+.welcome {
+	background-color: #4770bf;
+	width: 90%;
+	margin: 25px auto;
+	box-sizing: border-box;
+	padding: 20px;
+	overflow-y: auto;;
+}
+
+.welcome p {
+	font-size: 12pt;
+}
+
+.welcome a {
+	text-decoration: none;
+	font-weight: bold;
+	color: limegreen;
+}
+.welcome a:hover {
+	text-decoration: underline;
+	font-weight: bolder;
+	color: red;
+}

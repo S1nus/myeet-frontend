@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "myeet",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "preact build",
+    "serve": "sirv build --cors --single",
+    "dev": "preact watch",
+    "lint": "eslint src"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "eslintIgnore": [
+    "build/*"
+  ],
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-synacor": "^3.0.4",
+    "preact-cli": "^3.0.0-rc.10",
+    "sirv-cli": "^0.4.5"
+  },
+  "dependencies": {
+    "preact": "^10.4.4",
+    "preact-render-to-string": "^5.1.8",
+    "preact-router": "^3.2.1",
+    "uuid": "^8.1.0"
+  }
+}
